@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-success p-2 text-white-50 bg-opacity-75">
+    <div class="container ">
+        <a class="navbar-brand" routerLink="">La Vie</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLinkActiveOptions]="{'exact': true}" routerLink="" routerLinkActive="active"  aria-current="page">Home <span
+                            class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/h" routerLinkActive="active">Every day knowledge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/j" routerLinkActive="active">Market</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/k" routerLinkActive="active">Support</a>
+                </li>
+            </ul>
+            <ul class="d-flex my-2 my-lg-0 navbar-nav  mt-2 mt-lg-0">
+            <li class="nav-item" type="none">
+                <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId"
+                    placeholder="search">
+            </li>
+            <li class="nav-item" type="none">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item"routerLink="/a" routerLinkActive="active"><i class="bi bi-cart3"></i> Your cart</a>
+                        <a class="dropdown-item"routerLink="/s" routerLinkActive="active"><i class="bi bi-patch-question-fill"></i> quizzes</a>
+                        <a class="dropdown-item"routerLink="/d" routerLinkActive="active">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"routerLink="/f" routerLinkActive="active"><i class="bi bi-box-arrow-right"></i> log out</a>
+                    </div>
+                </div>
+            </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="login" routerLinkActive="active"><i class="bi bi-box-arrow-in-left"></i> login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="signup" routerLinkActive="active">sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
