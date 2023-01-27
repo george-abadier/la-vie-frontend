@@ -1,15 +1,15 @@
 <div class="container mt-5">
-    <form>
-        <div class="mb-3 row">
+    <form (ngSubmit)="login(password.value,email.value)">
+        <div class="mb-3 row" >
             <label for="email" class="col-4 col-form-label">Your email</label>
             <div class="col-8">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your mail">
+                <input type="email" class="form-control" #email name="email" required  id="email" placeholder="Enter your mail">
             </div>
         </div>
         <div class="mb-3 row">
             <label for="password" class="col-4 col-form-label">Your password</label>
             <div class="col-8">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+                <input type="password" class="form-control" name="password" required #password id="password" placeholder="Enter password">
             </div>
         </div>
         <div class="mb-3 row">
